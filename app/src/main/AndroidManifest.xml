@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taxicaraubas.astacar">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".politicaDePrivacidade" />
+        <activity android:name=".telaInicial" />
+        <activity android:name=".verPassageiro" />
+        <activity
+            android:name=".configuracoesMotorista"
+            android:parentActivityName=".motorista" />
+        <activity
+            android:name=".gerenciarMotorista"
+            android:parentActivityName=".motorista" />
+        <activity
+            android:name=".configuracoes"
+            android:parentActivityName=".pedirCarro" />
+        <activity android:name=".login" />
+        <activity android:name=".SalaDeEspera" />
+        <activity
+            android:name=".novoMotorista"
+            android:parentActivityName=".administrador" />
+        <activity android:name=".administrador" />
+        <activity
+            android:name=".pedirCarro"
+            android:parentActivityName=".telaInicial" />
+        <activity
+            android:name=".cadastrarUsuario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".passageiro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lotacaoCarro"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taxicaraubas.astacar.listaPassageiros" />
+        </activity>
+        <activity
+            android:name=".listaPassageiros"
+            android:parentActivityName=".motorista"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taxicaraubas.astacar.motorista" />
+        </activity> <!-- FIM Activity para motorista -->
+        <!-- Activity para passageiro -->
+        <activity
+            android:name=".motorista"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taxicaraubas.astacar.motoristaEscolher" />
+        </activity>
+        <activity android:name=".motoristaEscolher" />
+        <activity
+            android:name=".listaMotorista"
+            android:parentActivityName=".pedirCarro" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

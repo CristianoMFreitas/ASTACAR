@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuConfiguracoes"
+        android:orderInCategory="100"
+        android:title="Configurações"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuAdmin"
+        android:orderInCategory="100"
+        android:title="Administrador"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSair"
+        android:orderInCategory="100"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+
+</menu>

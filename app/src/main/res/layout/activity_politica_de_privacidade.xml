@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".politicaDePrivacidade">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='\nA Associação de Taxistas de Caraúbas criou o aplicativo ASTACAR como um aplicativo gratuito. Este SERVIÇO é fornecido pela Associação de Taxistas de Caraúbas, sem nenhum custo e destina-se ao uso como está.  \n\nEsta página é usada para informar os visitantes sobre nossas políticas de coleta, uso e divulgação de Informações pessoais, se alguém decidir usar nosso Serviço.  \n\nSe você optar por usar nosso Serviço, concorda em coletar e usar informações em relação a esta política. As informações pessoais que coletamos são usadas para fornecer e melhorar o serviço. Não usaremos ou compartilharemos suas informações com ninguém, exceto conforme descrito nesta Política de Privacidade.  \n\nOs termos usados ​​nesta Política de Privacidade têm os mesmos significados que em nossos Termos e Condições, acessíveis na ASTACAR, a menos que definido de outra forma nesta Política de Privacidade.  Coleta e uso de informações  Para uma experiência melhor, ao usar nosso Serviço, podemos solicitar que você nos forneça certas informações de identificação pessoal, incluindo, entre outras, o uso da Câmera, cartão SD, memória interna do aparelho. As informações que solicitamos serão retidas por nós e usado conforme descrito nesta política de privacidade.  \n\nO aplicativo usa serviços de terceiros que podem coletar informações usadas para identificá-lo.  Link para a política de privacidade de provedores de serviços de terceiros usados ​​pelo aplicativo  Serviços do Google Play Dados de log  Queremos informar que, sempre que você usa nosso Serviço, em caso de erro no aplicativo, coletamos dados e informações (através de produtos de terceiros) no seu telefone chamado Log Data. Esses dados de registro podem incluir informações como o endereço IP do dispositivo, nome do dispositivo, versão do sistema operacional, a configuração do aplicativo ao utilizar nosso serviço, a hora e a data de uso do serviço e outras estatísticas .  \n\nCookies \nCookies são arquivos com uma pequena quantidade de dados que são comumente usados ​​como identificadores exclusivos anônimos. Eles são enviados para o navegador a partir dos sites visitados e armazenados na memória interna do dispositivo.  Este serviço não usa esses "cookies" explicitamente. No entanto, o aplicativo pode usar código e bibliotecas de terceiros que usam "cookies" para coletar informações e melhorar seus serviços. Você tem a opção de aceitar ou recusar esses cookies e saber quando um cookie está sendo enviado para o seu dispositivo. Se você optar por recusar nossos cookies, poderá não conseguir usar algumas partes deste Serviço.  \n\nProvedores de serviço  \nPodemos empregar empresas e indivíduos de terceiros devido aos seguintes motivos:  Para facilitar nosso serviço; Fornecer o serviço em nosso nome; Executar serviços relacionados ao serviço; ou Para nos ajudar a analisar como nosso Serviço é usado. Queremos informar aos usuários deste Serviço que esses terceiros têm acesso às suas Informações Pessoais. O motivo é executar as tarefas atribuídas a eles em nosso nome. No entanto, eles são obrigados a não divulgar ou usar as informações para qualquer outra finalidade.  Segurança  Valorizamos sua confiança em nos fornecer suas informações pessoais, portanto, estamos nos esforçando para usar meios comercialmente aceitáveis ​​de protegê-las. Mas lembre-se de que nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro e confiável, e não podemos garantir sua segurança absoluta.  Links para outros sites  Este serviço pode conter links para outros sites. Se você clicar em um link de terceiros, será direcionado para esse site. Observe que esses sites externos não são operados por nós. Portanto, recomendamos que você reveja a Política de Privacidade desses sites. Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de sites ou serviços de terceiros.  Privacidade das crianças  Esses serviços não tratam de menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças menores de 13 anos. No caso de descobrirmos que uma criança menor de 13 anos nos forneceu informações pessoais, as excluiremos imediatamente de nossos servidores. Se você é pai ou mãe ou responsável e sabe que seu filho nos forneceu informações pessoais, entre em contato conosco para que possamos realizar as ações necessárias.  Alterações a esta Política de Privacidade  \n\nPodemos atualizar nossa Política de Privacidade periodicamente. Portanto, é recomendável revisar esta página periodicamente para verificar se há alterações. Notificaremos você sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página. Essas alterações são efetivadas imediatamente após serem publicadas nesta página.  \n\nContate-Nos  \nSe você tiver alguma dúvida ou sugestão sobre nossa Política de Privacidade, não hesite em nos contactar em astacar.app@gmail.com.' />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="voltar"
+        android:text="Voltar"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

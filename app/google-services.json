@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "298394032784",
+    "firebase_url": "https://astacar-f9e08.firebaseio.com",
+    "project_id": "astacar-f9e08",
+    "storage_bucket": "astacar-f9e08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298394032784:android:ef0422589125b231d09615",
+        "android_client_info": {
+          "package_name": "com.taxicaraubas.astacar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298394032784-7mmbptahaj36gt7c9bbieuoo862p65l1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxicaraubas.astacar",
+            "certificate_hash": "8708229d98a9dfb9f5969bc2ca67b1108196d9b3"
+          }
+        },
+        {
+          "client_id": "298394032784-24btmhvnntpelb1hgbrj6kf04pgcb7lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKzGm6nBv5MuewZKVfLIztYIa9IqyOGMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298394032784-24btmhvnntpelb1hgbrj6kf04pgcb7lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
