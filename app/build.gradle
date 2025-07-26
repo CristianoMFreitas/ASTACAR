@@ -1,16 +1,22 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Aplica o plugin do Google Services
+}
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    namespace 'com.taxicaraubas.chamataxi'
+    compileSdk 35 // Atualizado para API 35
+    buildToolsVersion "35.0.0" // Atualizado para refletir a nova compileSdk
+
     defaultConfig {
-        applicationId "com.taxicaraubas.astacar"
-        minSdkVersion 19
-        targetSdkVersion 29
-        versionCode 8
-        versionName "1.0"
+        applicationId "com.taxicaraubas.chamataxi"
+        minSdkVersion 26 // Mantido, ajuste conforme sua necessidade mínima
+        targetSdkVersion 35 // Atualizado para API 35
+        versionCode 12
+        versionName "1.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -21,20 +27,34 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
-    implementation 'com.google.firebase:firebase-analytics:17.0.0'
-    implementation 'com.google.firebase:firebase-database:17.0.0'
-    implementation 'com.google.firebase:firebase-auth:17.0.0'
-    implementation 'de.hdodenhof:circleimageview:3.0.1'
-    implementation 'com.google.firebase:firebase-storage:17.0.0'
-    implementation 'com.firebaseui:firebase-ui-storage:0.6.0'
-    implementation 'com.github.santalu:mask-edittext:1.1.1'
+
+    // Dependências principais do Android (versões atualizadas para compatibilidade e melhorias)
+    implementation 'androidx.appcompat:appcompat:1.7.0' // Versão mais recente
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Versão atualizada, mas pode haver mais recente
+    implementation 'com.google.android.material:material:1.12.0' // Versão mais recente
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2' // Versão mais recente
+
+    // Firebase BoM (Bill of Materials) - A versão do Firebase é gerenciada aqui
+    implementation platform('com.google.firebase:firebase-bom:33.1.2') // Mantido, mas verifique se há uma versão mais recente se precisar
+
+    // Dependências do Firebase
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Outras dependências
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0' // Verifique se há uma versão mais recente se precisar
+    implementation 'de.hdodenhof:circleimageview:3.1.0' // Verifique se há uma versão mais recente se precisar
+    implementation 'com.github.santalu:mask-edittext:1.1.1' // Verifique se há uma versão mais recente se precisar
+
+    // Testes (versões atualizadas para compatibilidade e melhorias)
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1' // Versão mais recente
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1' // Versão mais recente
+
+    // Monitor (versão atualizada para compatibilidade e melhorias)
+    implementation 'androidx.test:monitor:1.7.1' // Versão mais recente
 }
 
+// Aplica o plugin do Google Services
 apply plugin: 'com.google.gms.google-services'

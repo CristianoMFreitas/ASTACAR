@@ -4,48 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.pedirCarro"
+    tools:context="com.taxicaraubas.chamataxi.pedirCarro"
     tools:layout_editor_absoluteX="10dp"
     tools:layout_editor_absoluteY="81dp" >
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView5"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="Estou indo para:"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/localizacao" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Minha localização"
+        android:layout_marginTop="80dp"
+        android:text="Estou indo para:"
         android:textAlignment="center"
         android:textColor="@color/cinza_escuro"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:text="Estou indo para:"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -57,102 +60,86 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="UnknownId">
 
-        <RadioButton
-            android:id="@+id/radioButtonMossoro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mossoró"
-            android:textColor="@color/cinza_escuro"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/radioButtonCaraubaas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="Caraúbas"
-            android:textColor="@color/cinza_escuro"
-            android:textStyle="bold" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:text="Vou esperar o carro no endereço:"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView49"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="Vou esperar o carro no endereço:"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />-->
 
-    <EditText
-        android:id="@+id/editTextRua"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:drawableLeft="@drawable/ic_home_black_24dp"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Rua"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+<!--    <EditText-->
+<!--        android:id="@+id/editTextRua"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:drawableLeft="@drawable/ic_home_black_24dp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Rua"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView49" />-->
 
-    <EditText
-        android:id="@+id/editTextBairro"
-        android:layout_width="0dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/ic_home_black_24dp"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Bairro"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNum"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRua" />
+<!--    <EditText-->
+<!--        android:id="@+id/editTextBairro"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:drawableLeft="@drawable/ic_home_black_24dp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Bairro"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/editTextNum"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextRua" />-->
 
-    <EditText
-        android:id="@+id/editTextNum"
-        android:layout_width="100dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:drawableLeft="@drawable/ic_home_black_24dp"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Num."
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextBairro"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRua" />
+<!--    <EditText-->
+<!--        android:id="@+id/editTextNum"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:drawableLeft="@drawable/ic_home_black_24dp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Num."-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/editTextBairro"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextRua" />-->
 
-    <EditText
-        android:id="@+id/editTextProximo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:drawableLeft="@drawable/ic_home_black_24dp"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Estou próximo a ..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBairro" />
+<!--    <EditText-->
+<!--        android:id="@+id/editTextProximo"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:drawableLeft="@drawable/ic_home_black_24dp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Estou próximo a ..."-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextBairro" />-->
 
     <Button
         android:id="@+id/botaoChamarCarro"
@@ -169,6 +156,37 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProximo" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextProximo"
+        tools:ignore="UnknownId" />
+
+    <RadioButton
+        android:id="@+id/radioButtonCaraubaas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Caraúbas"
+        android:textColor="@color/cinza_escuro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/botaoChamarCarro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonMossoro"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMossoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Mossoró"
+        android:textColor="@color/cinza_escuro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

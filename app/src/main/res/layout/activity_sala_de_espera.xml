@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.SalaDeEspera">
+    tools:context="com.taxicaraubas.chamataxi.SalaDeEspera">
 
     <Button
         android:id="@+id/button24"
@@ -55,8 +55,8 @@
 
     <TextView
         android:id="@+id/textViewEnderecoRequisicao"
-        android:layout_width="347dp"
-        android:layout_height="200dp"
+        android:layout_width="339dp"
+        android:layout_height="168dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -64,6 +64,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView55"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 

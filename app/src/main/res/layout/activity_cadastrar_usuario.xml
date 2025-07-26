@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.cadastrarUsuario">
+    tools:context="com.taxicaraubas.chamataxi.cadastrarUsuario">
 
     <TextView
         android:id="@+id/textView13"
@@ -49,17 +49,6 @@
                 android:ems="10"
                 android:hint="Nome Completo"
                 android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/editTextCadastrarCPF"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableLeft="@drawable/cpf"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint="CPF"
-                android:inputType="number" />
 
             <com.santalu.maskedittext.MaskEditText
                 android:id="@+id/editTextCadastrarTelefone"

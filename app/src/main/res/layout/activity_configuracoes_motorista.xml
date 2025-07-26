@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.configuracoesMotorista">
+    tools:context="com.taxicaraubas.chamataxi.configuracoesMotorista">
 
     <ProgressBar
         android:id="@+id/configuracaoMotoristaCarrgar"
@@ -18,9 +18,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageViewFotoPerfilMotorista"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="106dp"
+        android:layout_width="202dp"
+        android:layout_height="208dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="26dp"
         android:layout_marginBottom="8dp"
@@ -28,44 +27,54 @@
         app:civ_border_color="#FFFFFF"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView4"
-        app:layout_constraintEnd_toStartOf="@+id/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
 
     <ImageButton
         android:id="@+id/galeria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginTop="16dp"
         android:onClick="imagemGaleria"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camera"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_photo_black_24dp" />
 
     <ImageButton
         android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginTop="32dp"
         android:onClick="imagemCamera"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
         app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
 
     <ScrollView
         android:id="@+id/scrollView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="379dp"
+        android:layout_height="420dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="83dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/galeria">
+        app:layout_constraintTop_toBottomOf="@+id/galeria"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,7 +217,7 @@
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:onClick="botaoSalvarAlteracao"
+                android:onClick="botaoSalvarAlteracaoMotorista"
                 android:text="Salvar alterações"
                 android:textColor="@color/common_google_signin_btn_text_dark_default" />
 

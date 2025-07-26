@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.motoristaEscolher">
+    tools:context="com.taxicaraubas.chamataxi.motoristaEscolher">
 
     <ImageView
         android:id="@+id/EscolherMotoristaImgFotoMotorista"
@@ -164,8 +164,9 @@
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
         android:onClick="botaoIniciarViajem"
-        android:text="INICIAR VIAJEM"
+        android:text="INICIAR VIAGEM"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/botaoProcurarOutroMotorista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +182,7 @@
         android:layout_marginBottom="32dp"
         android:background="@color/colorPrimary"
         android:onClick="botaoProcurarOutroMotorista"
-        android:text="PROCRAR OUTRO MOTORISTA"
+        android:text="PROCURAR OUTRO MOTORISTA"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -202,9 +203,10 @@
         app:civ_circle_background_color="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
 
     <Button
         android:id="@+id/botaoCancelarViajem"
@@ -215,7 +217,7 @@
         android:layout_marginBottom="16dp"
         android:background="@color/cinza_escuro"
         android:onClick="botaoCancelarViajem"
-        android:text="CANCELAR VIAJEM"
+        android:text="CANCELAR VIAGEM"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -237,7 +239,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/botaoCancelarViajem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
 
     <ProgressBar
         android:id="@+id/motoristaEscolherCarregar"
@@ -248,5 +251,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/EscolherMotoristaImgFotoMotorista" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/botaoWatsapp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="2dp"
+        android:onClick="enviarMensagemWhatsApp"
+        android:src="@drawable/ic_icons8_whatsapp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="10dp"
+        app:civ_circle_background_color="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

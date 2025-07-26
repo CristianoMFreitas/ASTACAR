@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.taxicaraubas.astacar.login">
+    tools:context="com.taxicaraubas.chamataxi.login">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,6 +14,7 @@
         android:layout_marginEnd="116dp"
         app:layout_constraintBottom_toTopOf="@+id/textView48"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.40"
@@ -45,7 +46,7 @@
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="Nome"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/editTextLoginSenha"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,13 +90,15 @@
         android:id="@+id/switchPassageiroOuMotorista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="70dp"
         android:text="Sou um Motorista"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button25" />
+        app:layout_constraintTop_toBottomOf="@+id/button25"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -112,13 +115,28 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="25dp"
         android:onClick="politicaDePrivacidade"
         android:text="Política de Privacidade"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchPassageiroOuMotorista" />
+        app:layout_constraintTop_toBottomOf="@+id/switchPassageiroOuMotorista"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="346dp"
+        android:layout_height="38dp"
+        android:onClick="CadastrarNovo"
+        android:text="Cadastre-se"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button25"
+        app:layout_constraintVertical_bias="0.164" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.taxicaraubas.astacar">
+    package="com.taxicaraubas.chamataxi">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" /> </queries>
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,76 +32,75 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".politicaDePrivacidade" />
-        <activity android:name=".telaInicial" />
-        <activity android:name=".verPassageiro" />
+
+        <activity android:name="com.taxicaraubas.chamataxi.politicaDePrivacidade" />
+        <activity android:name="com.taxicaraubas.chamataxi.telaInicial" />
+        <activity android:name="com.taxicaraubas.chamataxi.verPassageiro" />
         <activity
-            android:name=".configuracoesMotorista"
-            android:parentActivityName=".motorista" />
+            android:name="com.taxicaraubas.chamataxi.configuracoesMotorista"
+            android:parentActivityName="com.taxicaraubas.chamataxi.motorista" />
         <activity
-            android:name=".gerenciarMotorista"
-            android:parentActivityName=".motorista" />
+            android:name="com.taxicaraubas.chamataxi.gerenciarMotorista"
+            android:parentActivityName="com.taxicaraubas.chamataxi.motorista" />
         <activity
-            android:name=".configuracoes"
-            android:parentActivityName=".pedirCarro" />
-        <activity android:name=".login" />
-        <activity android:name=".SalaDeEspera" />
+            android:name="com.taxicaraubas.chamataxi.configuracoes"
+            android:parentActivityName="com.taxicaraubas.chamataxi.pedirCarro" />
+        <activity android:name="com.taxicaraubas.chamataxi.login" />
+        <activity android:name="com.taxicaraubas.chamataxi.SalaDeEspera" />
         <activity
-            android:name=".novoMotorista"
-            android:parentActivityName=".administrador" />
-        <activity android:name=".administrador" />
+            android:name="com.taxicaraubas.chamataxi.novoMotorista"
+            android:parentActivityName="com.taxicaraubas.chamataxi.administrador" />
+        <activity android:name="com.taxicaraubas.chamataxi.administrador" />
         <activity
-            android:name=".pedirCarro"
-            android:parentActivityName=".telaInicial" />
+            android:name="com.taxicaraubas.chamataxi.pedirCarro"
+            android:parentActivityName="com.taxicaraubas.chamataxi.telaInicial" />
         <activity
-            android:name=".cadastrarUsuario"
+            android:name="com.taxicaraubas.chamataxi.cadastrarUsuario"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".passageiro"
+            android:name="com.taxicaraubas.chamataxi.passageiro"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".lotacaoCarro"
+            android:name="com.taxicaraubas.chamataxi.lotacaoCarro"
             android:screenOrientation="portrait">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taxicaraubas.astacar.listaPassageiros" />
+                android:value="com.taxicaraubas.chamataxi.listaPassageiros" />
         </activity>
         <activity
-            android:name=".listaPassageiros"
-            android:parentActivityName=".motorista"
+            android:name="com.taxicaraubas.chamataxi.listaPassageiros"
+            android:parentActivityName="com.taxicaraubas.chamataxi.motorista"
             android:screenOrientation="portrait">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taxicaraubas.astacar.motorista" />
-        </activity> <!-- FIM Activity para motorista -->
-        <!-- Activity para passageiro -->
-        <activity
-            android:name=".motorista"
-            android:screenOrientation="portrait">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taxicaraubas.astacar.motoristaEscolher" />
+                android:value="com.taxicaraubas.chamataxi.motorista" />
         </activity>
-        <activity android:name=".motoristaEscolher" />
         <activity
-            android:name=".listaMotorista"
-            android:parentActivityName=".pedirCarro" />
+            android:name="com.taxicaraubas.chamataxi.motorista"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taxicaraubas.chamataxi.motoristaEscolher" />
+        </activity>
+        <activity android:name="com.taxicaraubas.chamataxi.motoristaEscolher" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.taxicaraubas.chamataxi.listaMotorista"
+            android:parentActivityName="com.taxicaraubas.chamataxi.pedirCarro" />
+        <activity
+            android:name="com.taxicaraubas.chamataxi.MainActivity"
             android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.Intro">
+            android:theme="@style/Theme.Intro"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
     </application>
 
 </manifest>
